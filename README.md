@@ -2,6 +2,20 @@
 
 A full-stack MERN application for tracking a shared sales opportunity pipeline. Built for the CEO Factory / Dwison Advisory MERN Stack Developer Assignment.
 
+## Live Deployment
+
+- **Frontend (live app)**: https://mini-crm-opportunity-tracker-theta.vercel.app
+- **Backend (API)**: https://mini-crm-opportunity-tracker-zuuz.onrender.com
+- **API health check**: https://mini-crm-opportunity-tracker-zuuz.onrender.com/api/health
+
+> Note: the backend is hosted on Render's free tier, which spins down after periods of inactivity. The first request after idle time may take 30–50 seconds to respond while the service wakes up — this is expected and not an application bug.
+
+Registration is open, so any evaluator can create their own account directly from the live app. No test credentials are required, but one is provided below for convenience.
+
+**Test login credentials** (optional, registration also works):
+- Email: `<add a real test account email here>`
+- Password: `<add the real password here>`
+
 ## 1. Project Overview
 
 This is an internal CRM-style tool that lets a team of logged-in users:
@@ -156,12 +170,12 @@ All `/api/opportunities` routes require `Authorization: Bearer <token>`.
 2. Create a new Web Service, root directory `backend`.
 3. Build command: `npm install`. Start command: `npm start`.
 4. Add environment variables from the table above (`MONGO_URI`, `JWT_SECRET`, `JWT_EXPIRES_IN`, `CLIENT_ORIGIN`, `NODE_ENV=production`).
-5. Deploy and note the live backend URL (e.g. `https://your-app.onrender.com`).
+5. Deploy and note the live backend URL (e.g. `https://mini-crm-opportunity-tracker-zuuz.onrender.com`).
 
 ### Frontend — Vercel / Netlify
 1. Import the repo, root directory `frontend`.
 2. Build command: `npm run build`. Output directory: `dist`.
-3. Add `VITE_API_BASE_URL=https://your-backend-url.onrender.com/api`.
+3. Add `VITE_API_BASE_URL=https://mini-crm-opportunity-tracker-zuuz.onrender.com/api`.
 4. Deploy, then go back to the backend's `CLIENT_ORIGIN` env var and set it to this frontend URL, then redeploy the backend.
 
 ## 9. Known Limitations / Possible Future Improvements
