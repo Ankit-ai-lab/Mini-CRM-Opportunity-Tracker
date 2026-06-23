@@ -13,8 +13,8 @@ A full-stack MERN application for tracking a shared sales opportunity pipeline. 
 Registration is open, so any evaluator can create their own account directly from the live app. No test credentials are required, but one is provided below for convenience.
 
 **Test login credentials** (optional, registration also works):
-- Email: `<add a real test account email here>`
-- Password: `<add the real password here>`
+- Email: `test@gmail.com`
+- Password: `123456`
 
 ## 1. Project Overview
 
